@@ -1,0 +1,198 @@
+/* CSS Reset */
+*{
+    margin:0px;
+    padding:0px;
+    
+}
+
+.text-format{
+    text-align: center;
+    color:  #8c00ff;
+}
+/* Navbar Logo Styling */
+/* #class::before{
+    content: "";
+    background: url('classroom.jpg')no-repeat center center/cover ;
+    position:absolute;
+    height:100vh;
+    width:100%;
+    opacity:0.7;
+    z-index: -1;
+    
+} */
+section::before{
+    content: "";
+    background: url('classroom.jpg')no-repeat center center/cover;
+  
+    position: absolute;
+    width:100%;
+    height:180%;
+    top:0px;
+    left:0px;
+    z-index: -1;
+    opacity: 0.2;
+
+}
+#logo{
+    width: 170px;
+    filter:invert(100%);
+}
+#logo-text{
+    color:blue;
+    margin-left: 10px;
+    
+}
+
+
+#navbar::before{
+    content:"";
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:20%;
+    background-color: #8c00ff;
+    opacity:0.4;
+    z-index:-1;
+}
+
+#nav-items{
+    display:flex;
+    list-style: none
+    
+
+}
+
+#nav-items li{
+    margin: 54px 30px;
+
+}
+
+#nav-items li a{
+    padding:10px 16px;
+    text-decoration: none;
+    font-size:19px;
+    color: blue;
+}
+#nav-items li a:hover{
+    background-color: #ab47fd;
+    border-radius: 5px;
+    color: white;
+}
+
+#navbar{
+    display:flex;
+}
+
+#glowbtn_container{
+    display:flex;
+    justify-content: center;
+    padding:8px;
+    margin-top: 40px;  
+}
+#glow_button{
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid #ba69fc;
+    background-color: #ba69fc;
+    color: white;
+    /* position: relative; */
+    /* transition-property: box-shadow;
+    transition-duration:8s;
+    transition-timing-function: ease-in; */
+    /* animation: button_glow 2000ms infinite; */
+    animation-name: button_glow;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes button_glow {
+    0%{ 
+        background-color: #ba69fc;
+        box-shadow: 0 0 1px 5px #ba69fc;
+       
+        }
+
+    50%{
+        background-color: #8c00ff;
+        box-shadow: 0 0 8px 10px #ba69fc;
+      
+    }    
+   
+    100%{
+        background-color: #ba69fc;
+        box-shadow: 0 0 1px 5px #ba69fc;
+      
+    }    
+    
+}
+#admission-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    border: 2px solid #8c00ff;
+    border-radius: 10px;
+    margin:50px;
+    padding: 53px;
+
+}
+
+#admission-form div{
+    
+    margin-left:20px;
+    width:500px;
+}
+#admission-form input{
+    
+    width: 400px;
+    display:inline-block;
+    padding:10px;
+    color:#8c00ff;
+    border:2px solid #8c00ff;
+    border-radius: 5px;
+}
+
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #8c00ff; 
+  }
+
+#admission-form  label{
+display:inline-block;
+width:200px;
+color:#8c00ff;
+font-weight: bold;
+}
+.form_div{
+    margin:20px;
+    display: flex;
+}
+#form_div1{
+    margin-top:35px;
+    display:flex;
+}
+
+#intro_text{
+    margin-top: 30px;
+}
+
+#submitbtn{
+    padding: 6px 10px;
+    cursor: pointer;
+    color:#8c00ff;
+    font-weight: bold;
+    border:1.5px solid #8c00ff;
+    border-radius: 5px;
+}
+
+#submitbtn:hover{
+    background-color: #bf75fc;
+    color: white;
+    border:2px solid #8c00ff;
+    font-weight: bold;
+}
+
